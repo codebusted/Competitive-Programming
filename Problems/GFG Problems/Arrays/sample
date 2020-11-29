@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int sample(int n, int arr[]) {
+	for(int i = 0; i < n; i++) {
+		
+	}
+}
+
+int main(int argc, char const *argv[])
+{
+	int n = 5;
+	int arr[] = {1, 45, 47, 50, 51};
+	int res = sample(n, arr);
+	cout << res << endl;
+	return 0;
+}

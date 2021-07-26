@@ -1,0 +1,48 @@
+TREE
+properties:
+1. RECURSIVE data structure
+
+2. n nodes -> n-1 edges/links (arrows)
+
+3. depth (of node x) -> length of path from root (to x)
+or
+number of edges in path from root (to x)
+> depth of root = 0
+
+4. height (of node x) -> number of edges in the 'longest' path from x to a leaf node
+> height of leaf node = 0
+> height of tree = height of root node
+> height of tree with one node = 0
+> height of empty tree = -1
+
+> height of a tree = maximum depth of any node in a tree
+-note: level of node -> depth of node
+
+TYPES:
+1. BINARY TREE
+a tree in which each node can have atmost two children
+> it is most common type of tree
+
+ (i) strict/proper binary tree: each node can have either 2 or 0 child nodes
+ (ii) complete binary tree: all levels except the last are completely filled and all nodes are as left as possible
+-same level- nodes at same depth
+> max no. of nodes at level i = (2^i)
+ (iii) perfect binary tree: all levels are completely filled
+> max number of nodes in a binary tree of height 'h' = (2^0 + 2^1 + .. + 2^h) = 2^(h+1) - 1 = 2(no. of levels) - 1
+> height of perfect binary tree (with n nodes) = log2(n+1) - 1
+> height of complete binary tree = floor(log2(n))
+
+>* cost of operation(searching, inserting, deleting) of a tree is proportional to height of tree => less height, less cost 
+> min height of binary tree (with n nodes) = log2(n) -> cost of operation = O(log2(n))
+> max height of binary tree (with n nodes) = n-1 -> cost of operation = O(n)
+
+ (iv) balanced binary tree: difference between height of left and right subtree for every node is not more than k(mostly k=1)
+> balanced binary tree has good performance
+
+IMPLEMENTATION OF TREE
+> most common way of implementing tree is where nodes are dynamically created and are linked using pointer
+
+BINARY SEARCH TREE
+A binary tree in which, for each node, 
+> value of all nodes in the left subtree is lesser (or equal)
+> value of all nodes in the left subtree is greater

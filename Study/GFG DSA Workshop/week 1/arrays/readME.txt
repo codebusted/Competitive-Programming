@@ -1,0 +1,2 @@
+
+C language doesn’t provide any true support for 2D array or multidimensional arrays. A 2D array is simulated via 1D array of arrays. So a 2D array of int is actually a 1D array of array of int. Another important point is that array size can be derived from its initialization but that’s applicable for first dimension only. It means that 2D array need to have an explicit size of 2nd dimension. Similarly, for a 3D array, 2nd and 3rd dimensions

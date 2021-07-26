@@ -1,0 +1,50 @@
+
+number of digits in a number N = floor(log10(N) + 1)
+
+AP
+nth term = a + (n-1)*d
+sum of first n terms, Sn = n/2[2*a + (n-1)*d]
+
+GP
+nth term = a1 * pow(r, n-1)
+sum of first n terms = a*(pow(r, n) - 1) / r-1
+
+Median
+ODD
+Median = {(N+1)/2}th value.
+EVEN
+Median  =  Average of (N/2)th and {(N/2) + 1}th value.
+
+PRIME NUMBER
+SIEVE OF ERATOSTHENES
+most efficient way  of generating prime numbers upto a given number N
+
+FACTORIAL
+TRAILING ZEROS PROBLEM
+
+LCM and HCF
+LCM (LEAST COMMON MULTIPLE)
+The product of highest power of the prime numbers that appear in the prime factorization of any of the numbers gives us the LCM.
+HCF/GCD (HIGHEST COMMON FACTOR/ GREATEST COMMON DIVISOR)
+The product of the minimum powers of common prime terms in both of the prime factorization gives the HCF
+EFFICIENT METHOD: using EUCLIDEAN ALGORITHM
+
+PERMUTATION
+nPr = n!/(n - r)!
+PERMUTATION WITH DUPLICATES
+N! / (p1! * p2! *....*pk!)
+
+COMBINATION
+nCr = n! / [ (r!) * (n - r)! ]
+
+MODULAR ARITHEMATICS
+(a + b) mod M = ((a mod M) + (b mod M)) mod M.
+(a - b) mod M = ((a mod M) - (b mod M)) mod M.
+(a * b) mod M = ((a mod M) * (b mod M)) mod M.
+MODULAR INVERSE
+ a x ≡ 1 (mod M) {(a*x) % M = 1}
+> x should be in {0, 1, 2, ... M-1}
+> The multiplicative inverse of "a modulo M" exists if and only if a and M are relatively prime (i.e., if gcd(a, M) = 1).
+ Methods of finding Modular Inverse
+ 1. EXTENDED EUCLIDEAN ALGORITHM (used when a and m are coprime)
+ 2. FERMAT LITTLE THEOREM (used when m is prime)

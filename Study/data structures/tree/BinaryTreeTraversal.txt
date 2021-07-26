@@ -1,0 +1,14 @@
+Tree Traversal: Visiting each node in the tree exactly once in some order
+-visiting -> reading or processing
+
+Tree Traversal techniques-
+(i) Breadth-first
+	level-order traversal: level by level from left to right
+
+(ii) Depth-first
+In Depth-first approach, for any node,all sub-nodes are visited before visiting other node
+	preorder: <root><left><right>
+	inorder: <left><root><right>
+	postorder: <left><right><root>
+
+> inorder traversal of binary search tree gives sorted list.

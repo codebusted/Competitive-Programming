@@ -1,0 +1,59 @@
+GRAPH
+A graph 'G' is an ordered pair of a V of vertices and a set E of edges.
+ G = (V, E)
+
+note: ordered structure is represented by "()"
+      unordered structure is represented by "{}"
+
+      ordered pair: (a, b) != (b, a)
+      unordered pair: {a, b} == (b, a)
+
+Edges
+connection between two nodes/vertices
+Types:
+ directed edge- one way connection --->
+ 			  - represented as ordered pair
+ undirected edge- two way connection ----
+ 				- represented as unordered pair
+
+GRAPH TYPES
+ Directed Graph/ Digraph- Graph with all directed edges. eg, world wide web
+ Undireced Graph- Graph with all undirected edges. eg, social network, like facebook
+
+> undirected graph can be represented as directed graph where for each undirected edge we have two directed edges
+
+Weighted Graph
+A graph in which each edge is given a numerical weight.
+Unweighted Graph
+A weighted graph in which all edges have same weight (generally assumed 1)
+
+	1. Weighted directed graph eg. intracity road network
+	2. Weighted undirected graph eg. intercity road network
+	3. Unweighted directed graph eg. web
+	4. Unweighted undirected graph eg. social network
+
+PROPERTIES OF GRAPH
+1. self loop: both end points (origin and destination) of edge are same.
+
+2. multiedge/ parallel edge: if an edge occurs more than once in a graph
+
+3. Number of edges in a graph
+Assuming no self loop and paralled edge, (n nodes)
+ maximum number of edges in a directed graph = n(n-1)
+ maximum number of edges in an undirected graph = n(n-1) / 2
+
+Dense graph- too many number of edges
+Sparce graph- few number of edges
+
+4. Path
+Path/Walk: A sequence of vertices where each adjacent pair is connected by an edge
+
+ (Simple) path: A path/walk in which no vertices (and thus no edges) are repeated
+
+ Trail: A walk in which no edges are repeated (vertices may be repeated)
+
+Strongly connected graph: In a graph if there is a path from any vertex to all other vertices
+
+- strongly connected graph is associated with directed graph. Undirected graphs are simply called 'connected graphs'
+
+Weakly connected graph: If a directed graph is not strongly connected but can be turned into connected graph by treating all (directed) edges as undirected, it is called weakly conected graph.
